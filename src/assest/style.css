@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 50px;
+}
+
+.Heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Ticket {
+    -webkit-mask: url('./Ticket.svg') no-repeat center;
+    mask-image: url('./Ticket.svg') no-repeat center;
+    width: 26px;
+    height: 26px;
+    background-color: #8353E2;
+}
+
+.right-component {
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 10px 0px;
+}
+
+.firstBox {
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background: #E36BD8;
+    color: white;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.left-container p {
+    font-family: Epilogue;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+
+.left-container .Number {
+    font-size: 32px;
+    margin: 10px 0px;
+}
+
+.Increment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px 4px 2px 4px;
+    border-radius: 4px;
+    background-color: #FFFFFF80;
+    width: 68px;
+}
+
+.Arrow-drop {
+    -webkit-mask: url('./ArrowDropUp.svg') no-repeat center;
+    mask-image: url('./ArrowDropUp.svg') no-repeat center;
+    width: 12px;
+    height: 12px;
+    background-color: #006D24;
+}
+
+.Increment p {
+    color: #006D24;
+    font-size: 14px;
+}
+
+.RevenueIcon,
+.DollarIcon,
+.CostIcon {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.RevenueIcon {
+    -webkit-mask: url('./RevenueIcon.svg') no-repeat center;
+    mask-image: url('./RevenueIcon.svg') no-repeat center;
+}
+
+.DollarIcon {
+    -webkit-mask: url('./DollarIcon.svg') no-repeat center;
+    mask-image: url('./DollarIcon.svg') no-repeat center;
+}
+
+.CostIcon {
+    -webkit-mask: url('./CostIcon.svg') no-repeat center;
+    mask-image: url('./CostIcon.svg') no-repeat center;
+}
+
+.ProfitContainer {
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background: #FBA140;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.CostContainer {
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background: #F1F45B;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.Btn-container {
+    background-color: rgba(0, 189, 214, 1);
+    padding: 2px;
+    border-radius: 4px;
+    width: 233px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.Btn-container button {
+    width: 100%;
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.Btn-container button:hover {
+    background-color: white;
+    color: rgba(0, 189, 214, 1);
+}
+
+/*Revenue Component Styling*/
+
+.ticket-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 0px;
+    column-gap: 15px;
+}
+
+.ticket-Sales,
+.ticket-sales-right,
+.sponsorShip-bottom-container {
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.ticket-Sales h4 {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(23, 26, 31, 1);
+}
+
+.ticket-Sales span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(144, 149, 160, 1);
+}
+
+.graph-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.Circle {
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#Blue {
+    background: rgba(55, 154, 230, 1);
+}
+
+#Green {
+    background: rgba(29, 215, 91, 1);
+}
+
+#Orange {
+    background: rgba(239, 176, 52, 1);
+}
+
+.values p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.sponsorShip-bottom-container h2 {
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+
+.sponsorShip-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 30px;
+}
+
+.sponsorShip-left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sponsorShip-left-container p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.sponsorShip-right-container-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#row1,
+#row2,
+#row3 {
+    background-color: rgba(250, 250, 251, 1);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    column-gap: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.RectangleIcon-blue,
+.RectangleIcon-green,
+.RectangleIcon-orange {
+    -webkit-mask: url('./Rectangle.svg') no-repeat center;
+    mask-image: url('./Rectangle.svg') no-repeat center;
+    width: 6px;
+    height: 28px;
+}
+
+.RectangleIcon-blue {
+    background-color: rgba(0, 189, 214, 1);
+
+}
+
+.RectangleIcon-green {
+    background-color: rgba(131, 83, 226, 1);
+
+}
+
+.RectangleIcon-orange {
+    background-color: rgba(237, 125, 45, 1);
+}
+
+/*Details Component Styling*/
+
+.Details-heading {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.ticketSale-table {
+    border: 1px solid rgba(222, 225, 230, 1);
+    max-width: 456px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.ticketSale-table table {
+    width: 100%;
+}
+
+.ticketSale-table tr,
+th,
+td {
+    border: 1px solid rgba(222, 225, 230, 1);
+    text-align: center;
+}
+
+.header {
+    background-color: rgba(239, 176, 52, 1);
+}
+
+.header,
+.Sponsorship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.table-heading {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}
+
+.table-data {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+.Sponsorship-header {
+    background-color: rgba(0, 189, 214, 1);
+}
+
+
+/* @media screen and (min-width: 600px) {
+    .box-container{
+        flex-direction: column;
+    }
+
+    .ticket-container, .sponsorShip-container{
+        grid-template-columns: 1fr;
+    }
+} */
