@@ -65,6 +65,9 @@ const Details = () => {
                     </tr>
                 </table>
             </div>
+            <div className="total">
+                <p>Grand total = $ 21600</p>
+            </div>
         </>
     )
 }

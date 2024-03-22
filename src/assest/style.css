@@ -334,7 +334,7 @@
 
 .ticketSale-table {
     border: 1px solid rgba(222, 225, 230, 1);
-    max-width: 456px;
+    max-width: 472px;
     margin-top: 15px;
     border-radius: 4px;
 }
@@ -388,13 +388,32 @@ td {
     background-color: rgba(0, 189, 214, 1);
 }
 
+.total {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: rgba(29, 215, 91, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 15px;
+    max-width: 472px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* @media screen and (min-width: 600px) {
-    .box-container{
+.total p {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 600px) {
+    .box-container {
         flex-direction: column;
     }
 
-    .ticket-container, .sponsorShip-container{
+    .ticket-container,
+    .sponsorShip-container {
         grid-template-columns: 1fr;
     }
-} */
+}
