@@ -5,14 +5,11 @@ import Details from './Details';
 
 const Task = () => {
     let [dataShown, setDataShown] = useState(false);
-    
+    let [isActive, setIsActive] = useState(false);
+
     let showComponent = () => {
-        if (dataShown == "true"){
-            setDataShown(false);
-        }
-        else{
-            setDataShown(true);
-        }
+        setIsActive(current => !current);
+        setDataShown((dataShown) => !dataShown);
     }
     return (
         <>
@@ -53,11 +50,11 @@ const Task = () => {
                     </div>
                 </div>
                 <div className="Btn-container">
-                    <button onClick={showComponent}>Revenue</button>
-                    <button >Cost</button>
+                    <button onClick={showComponent} className={isActive ? "btn-active" : " "}>Revenue</button>
+                    <button>Cost</button>
                 </div>
                 {
-                    dataShown ? <RevenueComponent/> : " "
+                    dataShown ? <RevenueComponent /> : " "
                 }
                 <Details />
             </div>

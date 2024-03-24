@@ -33,7 +33,41 @@ const RevenueComponent = () => {
                     </div>
                 </div>
                 <div className="ticket-sales-right">
-                    <p>Right side</p>
+                    <div className="ticket-sales-right-upper-container">
+                        <div className="upper-left-container">
+                            <div className="details">
+                                <p>VVIP</p>
+                                <p>VIP</p>
+                                <p>REGULAR</p>
+                            </div>
+                            <div className="value">
+                                <p><span>$</span>4,200</p>
+                                <p><span>$</span>7,000</p>
+                                <p><span>$</span>8,000</p>
+                            </div>
+                        </div>
+                        <div className="column-chart-container">
+                            {/* <p>Column chart will apear here</p> */}
+                            <div className="chart-vvip-column" />
+                            <div className="chart-vip-column" />
+                            <div className="chart-regular-column" />
+                        </div>
+                        <div className="upper-right-sales-details">
+                            <p>200 tickets</p>
+                            <p>500 tickets</p>
+                            <p>1000 tickets</p>
+                        </div>
+                    </div>
+                    <div className="ticket-sales-right-bottom-container">
+                        <div className="total-revenue-container">
+                            <p>Total Revenue : </p>
+                            <p><span>$</span>19,200</p>
+                        </div>
+                        <div className="total-tickets-container">
+                            <p>Total Tickets Sold : </p>
+                            <p>1700</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="sponsorShip-bottom-container">
