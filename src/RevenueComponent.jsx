@@ -51,6 +51,12 @@ const RevenueComponent = () => {
                             <div className="chart-vvip-column" />
                             <div className="chart-vip-column" />
                             <div className="chart-regular-column" />
+                            <div className="line-container">
+                                <div className="horizontal-line-first" />
+                                <div className="horizontal-line-second" />
+                                <div className="horizontal-line-three" />
+                                <div className="horizontal-line-four" />
+                            </div>
                         </div>
                         <div className="upper-right-sales-details">
                             <p>200 tickets</p>

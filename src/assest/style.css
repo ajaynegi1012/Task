@@ -187,7 +187,7 @@
 .sponsorShip-bottom-container {
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
     background-color: rgba(255, 255, 255, 1);
-    padding: 10px 15px;
+    padding: 25px;
     border-radius: 4px;
 }
 
@@ -247,7 +247,7 @@
 .ticket-sales-right-upper-container,
 .upper-left-container {
     display: grid;
-    column-gap: 10px;
+    column-gap: 15px;
     grid-template-columns: 1fr 3fr 1fr;
 }
 
@@ -271,6 +271,40 @@
     font-weight: 700;
 }
 
+.column-chart-container {
+    position: relative;
+    z-index: 99;
+}
+
+.horizontal-line-first,
+.horizontal-line-second,
+.horizontal-line-three,
+.horizontal-line-four {
+    height: 100%;
+    border: 1px solid #DEE1E6;
+    position: absolute;
+    top: -10px;
+}
+
+.horizontal-line-first {
+    left: 0;    
+    border: 1px solid #545151;
+}
+
+.horizontal-line-second {
+    left: 40%;
+    z-index: -1;
+}
+
+.horizontal-line-three {
+    right: 30%;
+    z-index: -1;
+}
+
+.horizontal-line-four {
+    right: -8px;
+}
+
 .chart-vvip-column,
 .chart-vip-column,
 .chart-regular-column {
@@ -279,19 +313,22 @@
 }
 
 .chart-vvip-column {
-    background: linear-gradient(to right, rgba(34,181,226,1) 0%, rgba(34,181,226,1) 33%, rgba(34,181,226,1) 34%, rgba(182,221,237,1) 34%, rgba(177,235,246,1) 35%);;
+    background: linear-gradient(to right, rgba(34, 181, 226, 1) 0%, rgba(34, 181, 226, 1) 33%, rgba(34, 181, 226, 1) 34%, rgba(182, 221, 237, 1) 34%, rgba(177, 235, 246, 1) 35%);
+    ;
 }
 
 .chart-vip-column {
-    background: linear-gradient(to right, rgba(33,180,226,1) 0%, rgba(33,180,226,1) 54%, rgba(166,245,255,1) 54%, rgba(166,245,255,1) 55%, rgba(175,234,246,1) 99%, rgba(183,222,237,1) 100%);;
+    background: linear-gradient(to right, rgba(33, 180, 226, 1) 0%, rgba(33, 180, 226, 1) 54%, rgba(166, 245, 255, 1) 54%, rgba(166, 245, 255, 1) 55%, rgba(175, 234, 246, 1) 99%, rgba(183, 222, 237, 1) 100%);
+    ;
 }
 
 .chart-regular-column {
-    background: linear-gradient(to right, rgba(34,181,226,1) 0%, rgba(34,181,226,1) 74%, rgba(168,245,255,1) 74%, rgba(177,235,246,1) 99%, rgba(182,221,237,1) 100%);;
+    background: linear-gradient(to right, rgba(34, 181, 226, 1) 0%, rgba(34, 181, 226, 1) 74%, rgba(168, 245, 255, 1) 74%, rgba(177, 235, 246, 1) 99%, rgba(182, 221, 237, 1) 100%);
+    ;
 }
 
 .upper-right-sales-details {
-    isplay: flex;
+    display: flex;
     flex-direction: column;
     align-items: start;
 }
@@ -508,5 +545,6 @@ td {
     .ticket-container,
     .sponsorShip-container {
         grid-template-columns: 1fr;
+        row-gap: 15px;
     }
 }
